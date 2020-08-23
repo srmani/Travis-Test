@@ -1,13 +1,6 @@
 language: c++
-
-matrix	
-  include:
-    - os: linux
-      dist: trusty
-      sudo: required
-      env: CC=mpicc CXX=mpic++
+compiler: gcc
 
 script:
-  - git clone -b stable https://github.com/lammps/lammps.git
-  - cd src
-  - make mpi
+  - g++ helloworld.cpp -o helloworld
+  - ./helloworld
