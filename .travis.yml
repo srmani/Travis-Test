@@ -8,6 +8,5 @@ matrix:
     env: CC=mpicc CXX=mpic++
 
 script:
-  - git clone https://github.com/lammps/lammps.git
-  - cd src
+  - git clone -b stable https://github.com/lammps/lammps.git
   - make mpi
