@@ -4,7 +4,6 @@ jobs:
   include:
     - os: linux
       dist: trusty
-      sudo: required
       env: CC=mpicc CXX=mpic++
 
 install:
@@ -18,4 +17,5 @@ install:
 script:
     - git clone -b stable https://github.com/lammps/lammps.git
     - cd lammps
+    - cd src
     - make mpi
