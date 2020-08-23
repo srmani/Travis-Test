@@ -17,5 +17,5 @@ install:
 
 script:
     - git clone -b stable https://github.com/lammps/lammps.git
-    - if test "$PLUMED_CXX" ; then ./configure CXX=$(which $PLUMED_CXX) CC=$(which $PLUMED_CC); fi
-    - if test "$PLUMED_CXX" ; then make -j 4 ; fi
+    - if test "$CXX" ; then ./configure CXX=$(which $CXX) CC=$(which $CC); fi
+    - if test "$CXX" ; then make -j 4 ; fi
