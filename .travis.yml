@@ -17,5 +17,5 @@ install:
 
 script:
     - git clone -b stable https://github.com/lammps/lammps.git
-    - cd MACHINES
+    - cd lammps
     - make mpi
