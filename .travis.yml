@@ -1,11 +1,11 @@
 language: c++
 
-matrix:	
+jobs:	
   include:
-    -os: linux
-    dist: trusty
-    sudo: required
-    env: CC=mpicc CXX=mpic++
+    - os: linux
+      dist: trusty
+      sudo: required
+      env: CC=mpicc CXX=mpic++
 
 install:
     - export PATH="$HOME/opt/bin:$PATH"
@@ -17,5 +17,5 @@ install:
 
 script:
     - git clone -b stable https://github.com/lammps/lammps.git
-    - if test "$CXX" ; then ./configure CXX=$(which $CXX) CC=$(which $CC); fi
-    - if test "$CXX" ; then make -j 4 ; fi
+    - cd MACHINES
+    - make mpi
