@@ -7,9 +7,6 @@ matrix:
     sudo: required
     env: CC=mpicc CXX=mpic++
 
-
-	
-
 script:
   - git clone -b stable https://github.com/lammps/lammps.git
   - make serial
