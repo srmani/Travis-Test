@@ -10,4 +10,4 @@ matrix:
 script:
   - git clone https://github.com/lammps/lammps.git
   - cd src
-  - make mpi  
+  - make mpi
