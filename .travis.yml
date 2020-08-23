@@ -2,5 +2,5 @@ language: c++
 compiler: icc
 
 script:
-  - g++ helloworld.cpp -o helloworld
+  - icc helloworld.cpp -o helloworld
   - ./helloworld
