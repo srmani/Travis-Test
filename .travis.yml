@@ -3,7 +3,7 @@ language: c++
 matrix:	
   include:
     -os: linux
-    dist:trusty
+    dist: trusty
     sudo: required
     env: CC=mpicc CXX=mpic++
 
